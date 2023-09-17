@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.navbar{
+    width:100%;
+    height:65px;
+    background-color: red;
+    color:blue;
+     display: flex; 
+    justify-content: space-between; 
+    font-size: 25px;
+    align-items: center;
+}
+.company{
+    margin-left: 30px;
+}
+.details ul li{
+   display: inline-flex;
+   list-style: none; 
+   margin-right: 30px;
+}
+.details ul li:hover{
+     background-color: black; 
+     color: white;
+    
+}
+.company:hover{
+    background-color: white; 
+    color: gold;
+   
+}
+.bannerimg{
+    border: 2px solid green;
+}
+.subcat{
+    border: 2px dotted palevioletred;
+    
+}
+.subcat ul li{
+    border: 2px solid green;
+    display: inline-flex;
+    width:100px;
+    height: 100px;
+    margin: 15px;
+    list-style: none;
+}
+.subcat ul li img:hover{
+ transform: scale(1.5);
+}
+.arrivals{
+    border: 2px double yellow;
+
+}
+.arrivals ul li{
+    
+    display: inline-flex;
+    width: 250px;
+    height: 250px;
+    margin-left: 5px;
+    list-style: none;
+}
+.arrivals ul li img:hover{
+    transform: scale(1.2);
+    background-color: green;
+}
+.ban img{
+    width: 100%;
+    height: 350px;
+}
+.discounts{
+    border: 3px solid purple;
+    background-color: rgb(255, 0, 21);
+    width: 100%;
+    
+    
+}
+.discounts ul li{
+    display: inline-flex;
+    width: 300px;
+    height: 300px;
+    margin-left: 25px;
+    list-style: none;
+}
+.discounts ul li img:hover{
+    transform: scale(1.5);
+
+}
+.rakesh{
+    border: 2px solid black;
+    position: fixed;
+    width: 60px;
+    height: 20px;
+    background-color: blue;
+    color: red;
+    bottom: 15px;
+    right: 15px;
+    justify-content: center;
+}
