@@ -43,13 +43,14 @@
 // console.log(callMe1());
 
 //eg6
-console.log(doRevise);
-console.log(doRevise());
+console.log(doRevise);// undefined
+console.log(doRevise());// error uncaught typeerror doRevise is not a function
 var doRevise=function(){
     console.log("Success");
 };
-console.log(doRevise);
-console.log(doRevise());
+console.log(doRevise);//{console.log("success")}
+console.log(doRevise());//Success
+//undefined
 
 
 
