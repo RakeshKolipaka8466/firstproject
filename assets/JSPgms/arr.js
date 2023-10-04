@@ -124,6 +124,40 @@ const g=[1,2,3,4,5];
 console.log(g.includes(3));//true
 console.log(g.includes(11111));//false
 
+//concat()
+const aa=[1,2,3];
+const bb=[4,5,6];
+const cc=aa.concat(bb);
+console.log(cc);//[1,2,3,4,5,6]
+
+
+//reverse()
+const dd=[1,2,3,4,5];
+console.log(dd.reverse());//[5,4,3,2,1]
+
+//toString()
+const ee=1;
+const ff=ee.toString();
+console.log(ff);//1
+console.log(typeof ff);//string
+
+//lastindexOf()
+const gg=[1,1,1,1,12,2,2,2,2,4,5,5,5];
+console.log(gg.lastIndexOf(1));//3
+console.log(gg.indexOf(1));//0
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
