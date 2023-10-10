@@ -46,6 +46,12 @@ const call1=(value,index,array)=>{
 
 };
 random.forEach(call1);
+/*
+value=> 1 index=> 0 array=> Array(4)
+array.js:45 value=> 2 index=> 1 array=> Array(4)
+array.js:45 value=> 3 index=> 2 array=> Array(4)
+array.js:45 value=> hey index=> 3 array=> Array(4)
+*/
 
 
 const rand=[9,8,7,"VishalSir"];
@@ -93,7 +99,24 @@ const updatedLen=numbers.unshift("unshift");
 console.log("updatedArray",updatedLen);//unshift opposite push,push adds ele from end,unshift adds ele start
 
 
+const c="split function converting from string to array";
+const c1=c.split(" ");
+console.log("this is split");
+console.log(c1);  
 
+
+const str="iam Rakesh";
+console.log(str.split(" "));
+
+
+
+//join function converting from Array to String
+const arr=[1,2,3,4,5,6];
+console.log("this is join");
+console.log(arr.join());  //1,2,3,4,5,6
+console.log(arr.join("-")); //1-2-3-4-5-6
+console.log(arr.join("/")); //1/2/3/4/5/6
+console.log(arr.join(''));
 
 
 

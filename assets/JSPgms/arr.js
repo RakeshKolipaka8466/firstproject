@@ -114,7 +114,9 @@ console.log(e);
 
 
 //indexof()
+console.log("its indexof method");
 const f=[1,2,3,4,56,[11,22,333]];
+console.log(f.indexOf());//-1
 console.log(f.indexOf(4));//3
 console.log(f.indexOf("[11,22,333]"));//nonprimitive gave -1
 console.log(f.indexOf(55555));//-1  there is no our value it will return -1
@@ -125,10 +127,12 @@ console.log(g.includes(3));//true
 console.log(g.includes(11111));//false
 
 //concat()
+console.log("its concat method");
 const aa=[1,2,3];
 const bb=[4,5,6];
-const cc=aa.concat(bb);
-console.log(cc);//[1,2,3,4,5,6]
+const ddd=[7,8,9]
+const cc=aa.concat(bb,ddd);
+console.log(cc);//[1,2,3,4,5,6,7,8,9]
 
 
 //reverse()
@@ -145,6 +149,7 @@ console.log(typeof ff);//string
 const gg=[1,1,1,1,12,2,2,2,2,4,5,5,5];
 console.log(gg.lastIndexOf(1));//3
 console.log(gg.indexOf(1));//0
+console.log(gg.lastIndexOf());//-1
 
 
 
