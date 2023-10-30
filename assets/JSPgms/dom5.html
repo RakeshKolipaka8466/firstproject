@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS pgm's</title>
+    <style>
+        #btn1{
+            border: 2px solid red;
+            color: blue;
+            background-color: silver;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 10px;
+            font-size: 20px;
+            margin: 10px;
+        }
+        #btn2{
+            border: 2px solid blue;
+            color: red;
+            background-color: goldenrod;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 10px;
+            font-size: 20px;
+            display: flex;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>DOM Events</h2>
+    <!--<button id="btn1" onclick="clickme(event)">Add Event listener to button2 </button>-->
+    <button id="btn1">Add Event Listener to button2</button>
+    <button id="btn2">Remove Event Listener from button1</button>
+    <button id="btn3">Removeall</button>
+
+    <select id="select" onchange="selectTheme(event)">
+    <option value="white" selected>Light</option>
+    <option value="black">Dark</option>
+    <option value="red">Red</option>
+    <option value="yellow">Yellow</option>
+    <option value="green">Green</option>
+    <option value="gold">Gold</option>
+    <option value="pink">Pink</option>
+    <option value="maroon">Maroon</option>
+    <option value="silver">Silver</option>
+    </select>
+
+   <script src="dom5.js"></script> 
+</body>
+</html>
