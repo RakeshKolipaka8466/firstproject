@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS pgm's</title>
+    <style>
+        .box{
+            border: 2px solid green;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+        .grandparent{
+            width: 400px;
+            height: 350px;
+        }
+        .parent{
+            width: 300px;
+            height: 250px;
+        }
+        .child{
+            width: 200px;
+            height: 150px;
+        }
+        .grandchild{
+            width: 100px;
+            height: 75px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Event Bubbling</h1>
+    <h2>Event Bubbling is bottom to top approach</h2>
+    <div class="grandparent box" onclick="grandparent(event)">
+        <div class="parent box" onclick="parent(event)">
+            <div class="child box" onclick="child(event)">
+                <div class="grandchild box" onclick="grandchild(event)">
+                      Click Me!!
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <script src="eventbubbling.js"></script>
+</body>
+</html>
