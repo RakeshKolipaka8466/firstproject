@@ -28,6 +28,33 @@
             width: 100px;
             height: 75px;
         }
+
+        .card{
+            display: flex;
+            flex-direction: column;
+            border: 2px solid;
+            min-height: 200px;
+            max-width: 250px;
+            border-radius: 5px;
+            justify-content: space-evenly;
+            padding-bottom: 10px;
+        }
+        .title{
+            padding-top: 10px;
+        }
+        .flex{
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #capture{
+            width: 300px;
+            height: 250px;
+        }
+        #childCap{
+            width: 100px;
+            height: 100px;
+        }
     </style>
 </head>
 <body>
@@ -45,6 +72,24 @@
         </div>
 
     </div>
+
+
+<div class="card" onclick="cardHandler()">
+    <img src="https://www.thespruceeats.com/thmb/IPz-vGjYi6_vyT1UyQBOLiaOFw8=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/chocolate_hero1-d62e5444a8734f8d8fe91f5631d51ca5.jpg" alt="chocolate"/>
+    <span class="title">Dark Chocolate</span>
+    <div class="title flex">
+        <span>₹50</span>
+        <button onclick="buttonHandler(event)">Add</button>
+    </div>
+</div>
+
+
+<h2>Event Capturing</h2>
+<div id="capture" class="box">
+    Parent
+    <div id="childCap" class="box">Click Me</div>
+</div>
+
     <script src="eventbubbling.js"></script>
 </body>
 </html>
