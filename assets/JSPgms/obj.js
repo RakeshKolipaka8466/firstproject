@@ -112,6 +112,76 @@ console.log(targetObj);
 console.log(resultObj===targetObj);
 
 
+//shalllow copy  
+const a=20;//primitive
+const b=a; //we created the copy of a pass by value
+console.log(b);
+
+const a1=[21,22,23];//non primitive array  3length
+const b1=a1;
+b1[3]=28;
+console.log(a1);//[21,22,23,28]
+console.log(b1);//[21,22,23,28] //these type of copy is called shallow copy(reference copy)
+
+//deep copy
+const a2=[1,2,3,4];
+const b2=a2;
+const c2=b2;
+console.log(c2);
+const deepCopy=[...c2];
+console.log("deep copy",deepCopy);
+
+const newtonStd=["Tim","Tom","Rim"];
+//deep copy
+const deepcopy=[...newtonStd];
+deepcopy.push("deepak");
+console.log(deepcopy,"print deep copy details");
+console.log(newtonStd,"after deep copy original array");
+
+//shallow copy
+const newtonStdShallowcopy=newtonStd;
+newtonStdShallowcopy.push("Jtm");
+console.log(newtonStdShallowcopy,"Shallow Copy");
+console.log(newtonStd,"after shallow copy original arr");
+
+
+const a4={};
+const a5=Object.create(null);
+console.log(a4===a5);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
